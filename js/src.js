@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    serviceBaseUrl = "/SecretCom";
     createChannel();
     openChannel();
     aboutThis();
@@ -42,7 +41,7 @@ function buttonCreateChannel() {
     $('#channelName').attr('value', '');
     $('#password').attr('value', '');
     $.ajax({
-        url: serviceBaseUrl + '/create-channel',
+        url: '/create-channel',
         type: "POST",
         contentType: "application/json",
         dataType: "json",
@@ -125,7 +124,7 @@ function oChannel(channelName, password, data) {
             data.append("file", document.getElementById('file').files[0]);
         
             $.ajax({
-                url: serviceBaseUrl + '/send-file',
+                url: '/send-file',
                 type: 'POST',
                 data: data,
                 async: false,
@@ -227,7 +226,7 @@ function buttonOpenChannel() {
     };
     
     $.ajax({
-        url: serviceBaseUrl + '/open-channel',
+        url: '/open-channel',
         type: "POST",
         contentType: "application/json",
         dataType: "json",
@@ -290,7 +289,7 @@ function buttonDeleteChannel() {
     };
     
     $.ajax({
-        url: serviceBaseUrl + '/delete-channel',
+        url: '/delete-channel',
         type: "POST",
         contentType: "application/json",
         dataType: "json",
@@ -363,7 +362,7 @@ function sendMessage(channelName, password, message, div_id) {
         "message": message
     }
     $.ajax({
-        url: serviceBaseUrl + '/send-message',
+        url: '/send-message',
         type: "POST",
         contentType: "application/json",
         dataType: "json",
@@ -386,7 +385,7 @@ function sendUrl(channelName, password, url, description, div_id) {
         "description": description
     }
     $.ajax({
-        url: serviceBaseUrl + '/send-url',
+        url: '/send-url',
         type: "POST",
         contentType: "application/json",
         dataType: "json",
@@ -444,7 +443,7 @@ function createChannelList() {
 
 function generateList() {
     $.ajax({
-        url: serviceBaseUrl + '/list-channels',
+        url: '/list-channels',
         cache: "false",
         type: "GET",
         dataType: "json",
