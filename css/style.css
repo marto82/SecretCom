@@ -1,0 +1,125 @@
+body {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 0px !important;
+    padding-bottom: 10px !important;
+    background: #EFEFEF;
+}
+
+.dialog_form th {
+    text-align: left;
+}
+
+.dialog_form input[type=text] {
+    width: 320px;
+}
+
+input[type=password] {
+    width: 320px;
+}
+
+#dialog_window_minimized_container {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.dialog_window_minimized {
+    float: left;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 2px;
+    display: none;
+}
+
+.dialog_window_minimized .ui-icon {
+    display: inline-block !important;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+
+.ui-dialog .ui-dialog-titlebar-minimize {
+    height: 18px;
+    width: 15px;
+    padding: 1px;
+    position: absolute;
+    right: 23px;
+    top: 9px;
+}
+
+.ui-dialog .ui-dialog-titlebar-minimize .ui-icon {
+    display: block;
+    margin-top: 3px;
+    padding-right: 0px;
+}
+
+.ui-dialog .ui-dialog-titlebar-minimize:hover, .ui-dialog .ui-dialog-titlebar-minimize:focus {
+    padding: 0;
+}
+
+ul { 
+    float:left;
+    width:100%;
+    margin:0;
+    list-style-type:none;
+}
+
+ul li { 
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding: 8px;
+    display:block;
+} 
+
+#createError {
+    color: red;
+    text-align:center;
+}
+
+#openError {
+    color: red;
+    text-align:center;
+}
+
+.ui-button .ui-button-text {
+    padding: 2px 11px 2px 21px !important;
+    font-size: .90em !important;
+}
+
+.ui-state-default {
+    padding: 2px 9px 2px 9px !important;
+    font-size: .95em !important;
+}
+
+
+
+.ui-widget {
+    font-size: 1.0em !important;
+}
+
+.menu {
+    background: #DDD;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    border: 1px solid blue;
+    width: 100%;
+}
+
+button {
+    float:left;
+    text-decoration:none;
+    background-color:purple;
+    padding:0.2em 0.6em;
+    border-right:1px solid white;
+}
+
+#f1_upload_process{
+    position:relative;
+    display: block;
+    text-align:center;
+}
