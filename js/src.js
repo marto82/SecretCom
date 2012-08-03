@@ -94,7 +94,7 @@ function oChannel(channelName, password, data) {
 	
         var div_title = channelName;
         var sendFile = '<div id="uploadForm">' +
-        '<form id="file_upload_form" method="post" enctype="multipart/form-data" action="' + serviceBaseUrl + '/send-file">' +
+        '<form id="file_upload_form" method="post" enctype="multipart/form-data" action="/send-file">' +
         '<input name="file" id="file" size="27" type="file" /><br />' +
         '<iframe id="upload_target" name="upload_target" src="" style="width:0;height:0;border:0px solid #fff;"></iframe>' +
         '</form><button id="submit" name="action" >Upload</buttom><br /></div>';
